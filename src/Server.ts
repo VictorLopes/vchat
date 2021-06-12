@@ -61,7 +61,7 @@ export default class Server {
 
       // a test purpose event to checkout if the server is working fine
       socket.on('ping', () => {
-        socket.emit('pong', 'Every thing works fine!');
+        socket.emit('pong', 'Everything works fine!');
       });
 
     });

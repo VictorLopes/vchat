@@ -20,7 +20,7 @@ describe('Starting server', () => {
   it("should work", done => {
     socket?.emit('ping');
     socket?.on("pong", (arg) => {
-      expect(arg).toBe("Every thing works fine!");
+      expect(arg).toBe("Everything works fine!");
       done();
     });
   });
