@@ -2,18 +2,22 @@
   "name": "vchat",
   "version": "1.0.0",
   "description": "A chat server built with Socket.io and Typescript",
-  "main": "index.js",
+  "main": "./src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node-dev --respawn server.ts"
+    "test": "jest --detectOpenHandles",
+    "dev": "ts-node-dev --respawn ./src/index.ts"
   },
   "keywords": [
-    "Chat", "Socket.io", "TypeScript"
+    "Chat",
+    "Socket.io",
+    "TypeScript"
   ],
   "author": "Victor Lopes",
   "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^26.0.23",
     "@types/redis": "^2.8.29",
+    "jest": "^27.0.4",
     "ts-node-dev": "^1.1.6"
   },
   "dependencies": {
@@ -21,6 +25,8 @@
     "dotenv": "^10.0.0",
     "redis": "^3.1.2",
     "socket.io": "^4.1.2",
+    "socket.io-client": "^4.1.2",
+    "ts-jest": "^27.0.3",
     "typescript": "^4.3.2"
   }
 }
